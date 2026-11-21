@@ -2,47 +2,94 @@
 # SupportIQ 🎧
 ### Intelligent Customer Support Management System
 
-SupportIQ is a web-based customer support management system built with Python and Streamlit. It helps support teams manage customer queries, track ticket progress, organize support requests, and monitor performance through an interactive dashboard.
+SupportIQ is a web-based customer support management system developed using Python and Streamlit. It provides a centralized platform to create, organize, track, and manage customer support tickets.
 
-The application also includes an NLP-powered FAQ assistant that matches user questions with relevant predefined answers using TF-IDF and cosine similarity.
+The application includes an NLP-based FAQ assistant, automatic ticket category suggestions, ticket status management, resolution notes, and interactive analytics.
 
-## 🚀 Features
+---
 
-- **Interactive Dashboard** – Monitor total, open, in-progress, and resolved tickets.
-- **Support Assistant** – Find relevant FAQ answers using NLP text similarity.
-- **Ticket Creation** – Create support tickets with customer details, descriptions, and priority levels.
-- **Automatic Category Suggestion** – Suggest ticket categories based on description similarity.
-- **Ticket Management** – Search, track, and update ticket statuses.
-- **Resolution Notes** – Record and save notes when resolving customer issues.
-- **Data Visualization** – View ticket statistics and category distribution through interactive charts.
-- **SQLite Database** – Store customer and ticket information locally.
+## 🚀 Key Features
 
-## 🛠️ Tech Stack
+- **Interactive Dashboard:** Monitor total tickets, open tickets, in-progress tickets, and resolved tickets.
+- **NLP-Based Support Assistant:** Find relevant answers from predefined FAQs using TF-IDF and cosine similarity.
+- **Ticket Creation:** Create support requests with customer details, subject, description, and priority.
+- **Automatic Category Suggestion:** Suggest relevant ticket categories based on description similarity.
+- **Ticket Management:** Search tickets and update their status.
+- **Resolution Notes:** Add and save notes when handling customer issues.
+- **Support Analytics:** Visualize ticket status and category distribution through interactive charts.
+- **Local Database:** Store customer and ticket information using SQLite.
 
-| Technology | Purpose |
+---
+
+## 🛠️ Technology Stack
+
+| Technology | Application |
 |---|---|
-| Python | Core programming language |
+| Python | Backend development |
 | Streamlit | Web application interface |
 | SQLite | Database management |
-| Pandas | Data handling and analysis |
-| Plotly | Interactive visualizations |
-| Scikit-learn | NLP text matching using TF-IDF and cosine similarity |
+| Pandas | Data processing |
+| Plotly | Interactive charts and visualizations |
+| Scikit-learn | NLP text processing and similarity matching |
+
+---
 
 ## 📸 Application Screenshots
 
-### 1. Dashboard
-<!-- Add dashboard screenshot here -->
+### 1. Create Support Ticket
 
-### 2. Create Support Ticket
-<!-- Add create ticket screenshot here -->
+![Create Ticket](./CREATE%20TICKET.png)
+
+### 2. Ticket Creation Interface
+
+![Ticket Creation Interface](./CREATETICKET.png)
 
 ### 3. Support Assistant
-<!-- Add support assistant screenshot here -->
 
-### 4. Manage Tickets
-<!-- Add manage tickets screenshot here -->
+![Support Assistant](./SUPPORT%20ASSIST.png)
 
-## ⚙️ Installation & Setup
+### 4. Manage Support Tickets
+
+![Manage Tickets](./MANAGETICKET.png)
+
+### 5. Updated Ticket Status
+
+![Updated Status](./UPDATED%20STATUS.png)
+
+---
+
+## 🧠 How the Support Assistant Works
+
+SupportIQ uses Natural Language Processing techniques to identify relevant FAQ answers.
+
+1. Predefined questions and answers are maintained in the application.
+2. TF-IDF converts FAQ questions into numerical feature vectors.
+3. Cosine similarity compares the user's query with existing FAQ questions.
+4. The most relevant matching answer is returned.
+
+**Note:** The assistant uses similarity-based FAQ matching. It does not currently use a generative AI or large language model.
+
+---
+
+## 🗄️ Database Design
+
+SupportIQ uses SQLite for local data storage.
+
+The database maintains:
+
+- Customer information
+- Support ticket details
+- Ticket priority and category
+- Ticket status
+- Resolution notes
+
+The database is initialized automatically when the application starts.
+
+---
+
+## ⚙️ Installation and Setup
+
+Follow these steps to run SupportIQ locally.
 
 ### 1. Clone the repository
 
@@ -62,15 +109,15 @@ cd SupportIQ
 python -m venv .venv
 ```
 
-### 4. Activate the environment
+### 4. Activate the virtual environment
 
-**Windows PowerShell:**
+For Windows PowerShell:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-### 5. Install dependencies
+### 5. Install the required dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -82,42 +129,52 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The application will open in your default browser.
+The application will open in your default web browser.
 
-## 🗄️ Database
+---
 
-SupportIQ uses SQLite for local data storage.
+## 📁 Project Structure
 
-The database is initialized automatically when the application starts. Customer information, support tickets, ticket statuses, and resolution notes are stored locally.
+```text
+SupportIQ/
+│
+├── app.py
+├── database.py
+├── support_engine.py
+├── requirements.txt
+├── .gitignore
+├── README.md
+│
+├── CREATE TICKET.png
+├── CREATETICKET.png
+├── MANAGETICKET.png
+├── SUPPORT ASSIST.png
+└── UPDATED STATUS.png
+```
 
-## 🧠 How the Support Assistant Works
+---
 
-The Support Assistant uses Natural Language Processing (NLP) techniques:
-
-1. Predefined FAQ questions and answers are stored in the application.
-2. TF-IDF converts text into numerical feature vectors.
-3. Cosine similarity compares the user's query with existing FAQ questions.
-4. The most relevant matching answer is returned.
-
-This is a similarity-based FAQ assistant, not a generative AI chatbot.
-
-## 🔮 Future Improvements
+## 🔮 Future Enhancements
 
 - User authentication and role-based access.
 - Email notifications for ticket updates.
-- Advanced support analytics.
-- Integration with generative AI APIs.
-- Cloud database deployment.
-- Multi-agent customer support workflows.
+- Advanced customer support analytics.
+- Generative AI integration for intelligent responses.
+- Cloud database integration.
+- Deployment for online access.
+
+---
 
 ## 👩‍💻 Author
 
 **Srushti Prajapati**
 
-B.Sc. Computer Science Student | AI & Software Development Enthusiast
+B.Sc. Computer Science Student  
+Interested in Artificial Intelligence, Software Development, and Product Development.
 
-GitHub: [@prajapatisrushti](https://github.com/prajapatisrushti)
+- GitHub: [@prajapatisrushti](https://github.com/prajapatisrushti)
+- Project Repository: [SupportIQ](https://github.com/prajapatisrushti/SupportIQ)
 
 ---
 
-⭐ If you find this project interesting, consider giving it a star!
+⭐ If you find this project interesting, consider giving the repository a star!
