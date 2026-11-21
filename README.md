@@ -2,6 +2,10 @@
 # SupportIQ 🎧
 ### Intelligent Customer Support Management System
 
+## 🚀 Live Demo
+
+Try SupportIQ here: https://supportiq-srushti.streamlit.app
+
 SupportIQ is a web-based customer support management system developed using Python and Streamlit. It provides a centralized platform to create, organize, track, and manage customer support tickets.
 
 The application includes an NLP-based FAQ assistant, automatic ticket category suggestions, ticket status management, resolution notes, and interactive analytics.
