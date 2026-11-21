@@ -10,10 +10,10 @@ The application includes an NLP-based FAQ assistant, automatic ticket category s
 
 ## 🚀 Key Features
 
-- **Interactive Dashboard:** Monitor total tickets, open tickets, in-progress tickets, and resolved tickets.
-- **NLP-Based Support Assistant:** Find relevant answers from predefined FAQs using TF-IDF and cosine similarity.
+- **Interactive Dashboard:** Monitor total, open, in-progress, and resolved tickets.
+- **NLP-Based Support Assistant:** Find relevant answers using TF-IDF and cosine similarity.
 - **Ticket Creation:** Create support requests with customer details, subject, description, and priority.
-- **Automatic Category Suggestion:** Suggest relevant ticket categories based on description similarity.
+- **Automatic Category Suggestion:** Suggest ticket categories based on description similarity.
 - **Ticket Management:** Search tickets and update their status.
 - **Resolution Notes:** Add and save notes when handling customer issues.
 - **Support Analytics:** Visualize ticket status and category distribution through interactive charts.
@@ -25,11 +25,11 @@ The application includes an NLP-based FAQ assistant, automatic ticket category s
 
 | Technology | Application |
 |---|---|
-| Python | Backend development |
+| Python | Core programming language |
 | Streamlit | Web application interface |
 | SQLite | Database management |
 | Pandas | Data processing |
-| Plotly | Interactive charts and visualizations |
+| Plotly | Interactive visualizations |
 | Scikit-learn | NLP text processing and similarity matching |
 
 ---
@@ -89,8 +89,6 @@ The database is initialized automatically when the application starts.
 
 ## ⚙️ Installation and Setup
 
-Follow these steps to run SupportIQ locally.
-
 ### 1. Clone the repository
 
 ```bash
@@ -117,7 +115,7 @@ For Windows PowerShell:
 .\.venv\Scripts\Activate.ps1
 ```
 
-### 5. Install the required dependencies
+### 5. Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -161,7 +159,7 @@ SupportIQ/
 - Advanced customer support analytics.
 - Generative AI integration for intelligent responses.
 - Cloud database integration.
-- Deployment for online access.
+- Online deployment.
 
 ---
 
@@ -169,7 +167,8 @@ SupportIQ/
 
 **Srushti Prajapati**
 
-B.Sc. Computer Science Student  
+B.Sc. Computer Science Student
+
 Interested in Artificial Intelligence, Software Development, and Product Development.
 
 - GitHub: [@prajapatisrushti](https://github.com/prajapatisrushti)
